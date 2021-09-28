@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Select from 'react-select'
+import { Select } from "@chakra-ui/react"
 import {
     FormControl,
     FormLabel,
