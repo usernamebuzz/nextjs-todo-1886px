@@ -6,13 +6,14 @@ import Todo from "./src/components/todo/Todo";
 const GlobalStyle = createGlobalStyle`
   *{  
     box-sizing: border-box;
+    background-color : #f3f7fe;
   }
   html {
     font-size : 10px;
+    
   }
   body {
     width: 100%;
-    background-color : #F6FFDB;
     margin: 0;
   }
 `;
@@ -21,8 +22,8 @@ function App() {
   return (
     <Wrapper>
       <GlobalStyle />
-      <Header />
-      <Todo />
+        <Header />
+        <Todo />
     </Wrapper>
   );
 }

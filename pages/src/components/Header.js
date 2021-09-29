@@ -5,7 +5,7 @@ export default function Header() {
 }
 
 const StlyedHeader = styled.header`
-  background-color: #00462a;
+  background-color: #94BAFF;
   color: #ffffff;
   font-size: 2rem;
   height: 7rem;

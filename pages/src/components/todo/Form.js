@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import buttonStyles from "./Button.module.css";
 
 export default function Form({ todoList, setTodoList }) {
   const [inputs, setInputs] = useState([]);
@@ -30,7 +31,7 @@ export default function Form({ todoList, setTodoList }) {
         onKeyDown={onEnter}
         value={inputs}
       />
-      <button onClick={onCreate}>+</button>
+      <button onClick={onCreate} className={buttonStyles.SubmitButton}>+</button>
     </div>
   );
 }
