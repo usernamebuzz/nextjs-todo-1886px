@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import itemStyles from "./item.module.css";
 
 // Hint: props로 id, text, onClick 등 (자유)
@@ -18,19 +18,17 @@ export default function Item({ task, todoList, setTodoList }) {
       <ul>
         <li
           style={{ textDecoration: state === "done" ? "line-through" : "none" }}
-          onClick={changeState}>
+          onClick={changeState}
+        >
           {task}
         </li>
-
         <Link href="/posts/todo_details">
-        <a>add details!</a> 
-        </Link>
-
-        {' '}
+          <a>add details!</a>
+        </Link>{" "}
         <button value={state} onClick={removeItem}>
           X
         </button>
       </ul>
     </section>
   );
-} 
+}

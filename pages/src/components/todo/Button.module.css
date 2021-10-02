@@ -1,17 +1,17 @@
-.SubmitButton{
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    border-radius: 5px;
-    background: #fff;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #666;
-    box-shadow: 0 6px 6px rgb(182, 182, 182);
-    outline: none;
-  }
+.SubmitButton {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #666;
+  box-shadow: 0 6px 6px rgb(182, 182, 182);
+  outline: none;
+}
 
-  .SubmitButton:active{
-    transform: scale(0.98);
-    background:   #EFC368;
-  }
+.SubmitButton:active {
+  transform: scale(0.98);
+  background: #abc4ff;
+}

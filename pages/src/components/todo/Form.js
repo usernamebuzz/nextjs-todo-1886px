@@ -24,7 +24,7 @@ export default function Form({ todoList, setTodoList }) {
     toastRef.current = toast({
       title: "Allons-y!",
       status: "success",
-      isClosable: true
+      isClosable: true,
     });
   };
 
@@ -42,7 +42,6 @@ export default function Form({ todoList, setTodoList }) {
     }
   };
 
-
   return (
     <AlignedDiv>
       <StyledInput
@@ -51,20 +50,25 @@ export default function Form({ todoList, setTodoList }) {
         onChange={onChange}
         onKeyDown={onEnter}
         value={inputs}
-      /><button onClick={onCreate} className={buttonStyles.SubmitButton}>+</button>
+      />
+      <button onClick={onCreate} className={buttonStyles.SubmitButton}>
+        +
+      </button>
     </AlignedDiv>
   );
 }
 
 const StyledInput = styled.input`
-  color: #214842;
+  color: #6e9aff;
   font-size: 2rem;
   display: flex;
-  align-items: center;
-  padding-left: 6rem;
+  padding-left: 1rem;
 `;
 
 const AlignedDiv = styled.div`
+  justify-content: center;
   display: flex;
   flex-direction: row;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
 `;

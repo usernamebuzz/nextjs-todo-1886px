@@ -1,15 +1,6 @@
-import styled from "styled-components";
+//import styled from "styled-components";
+import headerStyles from "./Header.module.css";
 
 export default function Header() {
-  return <StlyedHeader>React.js로 만든 TO-DO APP</StlyedHeader>;
+  return <h1 className={headerStyles.waveContainer}>To do list w/ next.js!</h1>;
 }
-
-const StlyedHeader = styled.header`
-  background-color: #258F67;
-  color: #ffffff;
-  font-size: 2rem;
-  height: 7rem;
-  display: flex;
-  align-items: center;
-  padding-left: 5rem;
-`;

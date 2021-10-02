@@ -1,16 +1,14 @@
 .section {
-    padding: 2rem 2rem;
-    background: #2c82c9;
-    padding-bottom: 2rem;
-  }
+  padding-left: 2rem;
+}
 .section li {
-    color: #214842;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    padding-left: 6rem;
-  }
+  color: #6e9aff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+}
 
-.section a{
-    padding-left: 6rem;
-  }
+.section a {
+  padding-left: 6rem;
+}

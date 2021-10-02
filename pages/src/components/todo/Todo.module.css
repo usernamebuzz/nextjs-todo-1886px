@@ -1,4 +1,6 @@
-.ToDoListStyle{
-    font-weight: bold;
-    font-size: 2em;
-    color: #214842;}
+.ToDoListStyle {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 1rem;
+  color: #6e9aff;
+}
