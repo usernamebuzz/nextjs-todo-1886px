@@ -9,7 +9,13 @@ export default function Todo() {
 
   const TodoList = () => {
     return todoList.map((task, index) => (
-      <Item task={task} todoList={todoList} setTodoList={setTodoList} />
+      <Item
+        task={task}
+        todoList={todoList}
+        setTodoList={setTodoList}
+        key={task.id}
+        id={index}
+      />
     ));
   };
 
