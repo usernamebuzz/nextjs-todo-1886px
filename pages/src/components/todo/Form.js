@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import buttonStyles from "./Button.module.css";
 import styled from "styled-components";
+import { useToast } from "@chakra-ui/react";
 
 export default function Form({ todoList, setTodoList }) {
   const [inputs, setInputs] = useState([]);
@@ -10,11 +11,29 @@ export default function Form({ todoList, setTodoList }) {
 
   const nextId = useRef(1);
 
+  const toastRef = useRef();
+  const toast = useToast();
+  const closeToast = () => {
+    toast.close(toastRef.current);
+  };
+
+  const addToast = () => {
+    if (toastRef.current) {
+      closeToast();
+    }
+    toastRef.current = toast({
+      title: "Allons-y!",
+      status: "success",
+      isClosable: true
+    });
+  };
+
   const onCreate = (e) => {
     const updatedList = [...todoList, inputs];
     setTodoList(updatedList);
     setInputs("");
     nextId.current += 1;
+    addToast();
   };
 
   const onEnter = (e) => {
@@ -22,6 +41,7 @@ export default function Form({ todoList, setTodoList }) {
       onCreate();
     }
   };
+
 
   return (
     <AlignedDiv>
