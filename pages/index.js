@@ -6,7 +6,7 @@ import Todo from "./src/components/todo/Todo";
 const GlobalStyle = createGlobalStyle`
   *{  
     box-sizing: border-box;
-    background-color : #f3f7fe;
+    background-color : #F5F3E8;
   }
   html {
     font-size : 10px;
